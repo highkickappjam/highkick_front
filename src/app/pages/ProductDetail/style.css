@@ -1,0 +1,31 @@
+.ProductDetailLayout{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Products{
+    padding-top: 89px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.ProductText{
+    font-size: 20px;
+    font-family: 'Pretendard-SemiBold';
+}
+.ProductImage{
+    padding-top: 8px;
+}
+.ProductImage2{
+    border-radius: 8px;
+}
+.HashTags{
+    padding-top: 8px;
+    display: flex;
+    gap: 6px;
+    width: 300px;
+}
+.ProductDetailButton{
+    padding-top: 129px;
+}

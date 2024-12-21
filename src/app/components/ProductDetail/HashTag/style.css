@@ -1,0 +1,11 @@
+.HashTagContainer{
+    display: flex;
+    padding: 0px 10px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #E1E1E1;
+    font-size: 12px;
+    font-family: 'Pretendard-SemiBold';
+}
