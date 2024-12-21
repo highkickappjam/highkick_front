@@ -1,0 +1,34 @@
+body, html{
+  text-align: center;
+  background: #fff;
+}
+
+.word{
+  color: #BF0;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 170px;
+}
+
+.logo{
+  margin-top: 250px;
+}
+
+.start_button{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.start_button button{
+  width: 345px;
+  padding: 20px 138px;
+  border-radius: 8px;
+  background-color: #BF0;
+  border: none;
+}
