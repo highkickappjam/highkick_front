@@ -1,0 +1,56 @@
+.ContestDetailLayout{
+    width: 100%;
+}
+.ContestDetailContainer{
+    padding-top: 63px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ContestDetailImageContainer{
+    width: 345px;
+}
+.DetailName{
+    font-size: 14px;
+    font-family: 'Pretendard-SemiBold';
+}
+.DetailTheme{
+    font-size: 20px;
+    font-family: 'Pretendard-SemiBold';
+}
+.DetailImagesContainer{
+    padding-top: 14px;
+}
+.DetailImage{
+    border-radius: 8px;
+}
+.DetailHeart{
+    padding-top: 8px;
+    width: 345px;
+    display: flex;
+    justify-content: end;
+    gap: 7px;
+}
+.DetailHeartText{
+    font-size: 14px;
+    font-family: 'Pretendard-SemiBold';
+    color: #FF0000;
+}
+.CodyListContainer{
+    width: 345px;
+    padding-top: 4px;
+}
+.CodyListText{
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-family: 'Pretendard-SemiBold';
+}
+.CodyList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-bottom: 100px;
+}

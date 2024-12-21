@@ -1,0 +1,15 @@
+.ContestImageBoxContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.DetailButton{
+    border-radius: 8px;
+    background: #BF0;
+    width: 92px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
