@@ -1,0 +1,13 @@
+.ButtonContainer{
+    display: flex;
+    width: 345px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #BF0;
+}
+.ButtonContainer>p{
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+}
