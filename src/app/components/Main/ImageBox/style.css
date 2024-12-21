@@ -1,0 +1,10 @@
+.ImageBoxContainer{
+    width: 76px;
+    height: 76px;
+    border-radius: 0.5rem;
+    border: 2px solid #C0C0C0;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
