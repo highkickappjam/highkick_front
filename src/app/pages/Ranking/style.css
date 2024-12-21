@@ -1,0 +1,10 @@
+.rankText{
+    margin-top: 65px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+.myRank{
+    position:fixed ;
+    top: 678px;
+}

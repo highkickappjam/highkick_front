@@ -1,0 +1,42 @@
+/* RankingCard 스타일 */
+.RankingCard {
+    width: 370px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-200, #F2F5F7);
+    background: #FFF;
+    padding: 0 16px; /* 좌우 여백 */
+    font-family: Arial, sans-serif;
+}
+
+.rank {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: red;
+}
+
+.heart {
+    margin-right: 5px;
+}
+
+.like-count {
+    font-weight: bold;
+}
+
+.myRank{
+    position: fixed;
+}
+
