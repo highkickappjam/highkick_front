@@ -5,6 +5,9 @@
     align-items: center;
     border-bottom: 1px solid var(--gray-200, #F2F5F7);
     background: #FFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 .logos{
     padding-left: 16px;
