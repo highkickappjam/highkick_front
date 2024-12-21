@@ -1,14 +1,13 @@
 import './style.css';
 import Footer from '@/app/components/Footer';
+import Header from '@/app/components/Header';
+import Head from 'next/head';
 
 const Theme=({})=>{
     return(
         <div className="theme">
 
-            <div className='logo'>
-                <img src="/assets/images/logos/Small_logo.svg" alt='Logo' />
-                
-            </div>
+            <Header />
         
             <hr />
 
