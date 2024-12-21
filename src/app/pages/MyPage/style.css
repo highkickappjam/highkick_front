@@ -1,0 +1,7 @@
+.MyPageLayout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 290px;
+    align-items: center;
+}
