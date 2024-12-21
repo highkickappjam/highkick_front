@@ -1,0 +1,75 @@
+.InputMyLayout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.InputMyContainer{
+    padding-top: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.write >input{
+    text-align: left;
+    display: flex;
+    padding-left: 12px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    height: 45px;
+    width: 345px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #EDEDEF;
+    background: #FFF;
+    font-size: 16px;
+    font-family: 'Pretendard-Medium';
+
+}
+.ImageWrite{
+    margin-top: 6px;
+    width: 345px;
+    height: 345px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #EDEDEF;
+}
+.ImageWrite>div{
+    font-family: 'Pretendard-Medium';
+    font-size: 16px;
+    color: #B2B8BE;
+}
+.ProductContainer{
+    width: 345px;
+    padding-top: 32px;
+}
+
+.Productwrite input{
+    text-align: left;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 5px;
+    border: 1px solid var(--gray-300, #DEE2E6);
+    background: #FFF;
+    padding-left: 12px;
+    font-size: 14px;
+    font-family: 'Pretendard-Medium';
+}
+.ProductText{
+    font-size: 14px;
+    font-family: 'Pretendard-Medium';
+}
+.Product_button{
+    padding-left: 25px;
+    padding-top: 90px;
+}
