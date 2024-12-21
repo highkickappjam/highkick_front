@@ -1,0 +1,45 @@
+.MainLayout{
+    width: 100%;
+}
+
+.MainText{
+    gap: 6px;
+    display: flex;
+    padding-left: 25px;
+    padding-top: 87px;
+    align-items: center;
+}
+.MainTextBold{
+    font-size: 20px;
+    font-family: 'Pretendard-Bold';
+}
+.MainTextNomal{
+    font-size: 16px;
+    font-family: 'Pretendard-Regular';
+}
+.Body{
+    position: fixed;
+    top: 184px;
+    left: 100px;
+}
+.MainButton{
+    padding-top: 539px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.FirstImageBox{
+    position: fixed;
+    top: 131px;
+    right: 42px;
+}
+.SecondImageBox{
+    position: fixed;
+    top: 308px;
+    left: 21px;
+}
+.ThirdImageBox{
+    position: fixed;
+    top: 455px;
+    right: 26px;
+}
