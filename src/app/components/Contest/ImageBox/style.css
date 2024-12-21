@@ -1,0 +1,27 @@
+.ContestImageBox{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 8px;
+    position: relative;
+}
+.Contest_bottom{
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.22);
+    width: 150px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.ContestImages{
+    padding-left: 118px;
+
+}
+.BoxImage{
+    border-radius: 8px;
+}
