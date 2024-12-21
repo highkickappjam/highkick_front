@@ -1,0 +1,65 @@
+.logo{
+    margin-top: 100px;
+    margin-left: 20px ;
+}
+
+.word2{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.word2 p {
+    font-size: 25px;
+}
+
+.inputBox{
+    text-align: center;
+    
+}
+
+.inputBox input{
+    margin-top: 10px;
+    display:flex;
+    width: 270px;
+    padding: 12px 270px 11px 12px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid var(--gray-300, #DEE2E6);
+    background: #FFF;
+ 
+}
+
+.genderBox{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.genderBox button{
+    width: 160px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    border: 1px solid gray;
+    border-radius: 5px ;
+}
+
+.login{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login button{
+    border-radius: 8px;
+    background: #BF0;
+    width: 345px;
+    padding: 14px 128px;
+    border: none;
+}
+
+.text2{
+    text-align: center;
+    font-size: 10px;
+    margin-top: 5px;
+}
