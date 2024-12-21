@@ -1,22 +1,57 @@
 "use client";
+
 import { useState } from "react";
 import "./style.css";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 export default function Signup() {
-  // 남자 버튼 클릭 여부
-  const [isMaleClicked, setIsMaleClicked] = useState(false);
+  const [name, setName] = useState<string>("");
+  const [id, setId] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [sex, setSex] = useState<string>(""); // 성별 상태 관리
+  const [error, setError] = useState<string | null>(null); // 에러 상태
+  const router = useRouter(); // useRouter 훅 가져오기
 
-  // 여자 버튼 클릭 여부
-  const [isFemaleClicked, setIsFemaleClicked] = useState(false);
-
-  // 남자 버튼 클릭 시 토글
+  // 남자 버튼 클릭
   const toggleMaleColor = () => {
-    setIsMaleClicked((prev) => !prev);
+    setSex("male");
   };
 
-  // 여자 버튼 클릭 시 토글
+  // 여자 버튼 클릭
   const toggleFemaleColor = () => {
-    setIsFemaleClicked((prev) => !prev);
+    setSex("female");
+  };
+
+  // 회원가입 버튼 클릭 핸들러
+  const handleSignup = async () => {
+    const data = {
+      id,
+      password,
+      sex,
+      name,
+    };
+
+    try {
+      const response = await axios.post("http://192.168.225.44:3000/signup", data, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log("회원가입 성공:", response.data);
+
+      // onboard 페이지로 이동
+      router.push("/pages/onboard");
+    } catch (err: any) {
+      if (err.response) {
+        setError(`Error ${err.response.status}: ${err.response.data.message || "Unknown error"}`);
+      } else if (err.request) {
+        setError("No response received from server");
+      } else {
+        setError(`Request error: ${err.message}`);
+      }
+    }
   };
 
   return (
@@ -34,9 +69,24 @@ export default function Signup() {
 
       {/* 입력 필드 */}
       <div className="inputBox">
-        <input type="text" placeholder="이름" />
-        <input type="text" placeholder="아이디" />
-        <input type="text" placeholder="비밀번호" />
+        <input
+          type="text"
+          placeholder="이름"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="아이디"
+          value={id}
+          onChange={(e) => setId(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="비밀번호"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
       </div>
 
       {/* 성별 선택 버튼 */}
@@ -44,8 +94,8 @@ export default function Signup() {
         <button
           onClick={toggleMaleColor}
           style={{
-            backgroundColor: isMaleClicked ? "blue" : "white",
-            color: isMaleClicked ? "white" : "black",
+            backgroundColor: sex === "male" ? "blue" : "white",
+            color: sex === "male" ? "white" : "black",
           }}
         >
           남자
@@ -54,18 +104,21 @@ export default function Signup() {
         <button
           onClick={toggleFemaleColor}
           style={{
-            backgroundColor: isFemaleClicked ? "red" : "white",
-            color: isFemaleClicked ? "white" : "black",
+            backgroundColor: sex === "female" ? "red" : "white",
+            color: sex === "female" ? "white" : "black",
           }}
         >
           여자
         </button>
       </div>
 
-      {/* 로그인 하러가기 버튼 */}
+      {/* 회원가입 버튼 */}
       <div className="login">
-        <button>로그인 하러가기</button>
+        <button onClick={handleSignup}>회원가입</button>
       </div>
+
+      {/* 성공/에러 메시지 */}
+      {error && <p className="error-message">{error}</p>}
 
       {/* 하단 텍스트 */}
       <div className="text2">
